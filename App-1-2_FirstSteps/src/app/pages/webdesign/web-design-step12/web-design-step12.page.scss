@@ -1,0 +1,20 @@
+header {
+	color: white;
+
+	background-color: white;
+	background-image: url('/assets/img/grand-canyon.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	// line-height: 1.2;
+	// max-width: none;
+	padding: 10vw;
+	text-align: center;
+
+	font-size: 3vw;
+}
+
+
+ion-card-header > ion-img {
+	// height: 300px;
+}

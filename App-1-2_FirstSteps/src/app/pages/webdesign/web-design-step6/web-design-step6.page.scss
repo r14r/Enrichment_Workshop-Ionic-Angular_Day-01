@@ -1,0 +1,21 @@
+section {
+	display: none;
+}
+
+section#color-contrast {
+	display: block;
+}
+
+* {
+	color: orange;
+}
+
+h1,
+h2,
+strong {
+	color: #333;
+}
+
+h2 {
+	color: blue;
+}

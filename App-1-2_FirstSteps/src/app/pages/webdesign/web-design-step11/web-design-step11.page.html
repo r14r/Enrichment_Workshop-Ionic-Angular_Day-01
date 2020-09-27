@@ -1,0 +1,66 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>WebDesign: Step 11</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<main>
+		<header>
+		</header>
+		<!-- 11 -->
+		<section id="images">
+			<h2>Images</h2>
+			<p>Graphics and icons can be used either as ornaments to support your content, or actively take part in the
+				message you want to convey.</p>
+			<p>Let's enhance our header with a nice <strong>background image</strong> from <a
+					href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a></p>
+			<pre class="code"><span class="selector">header</span>
+  <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
+  <span class="attribute">background-image</span>: url(<span class="string">"header.jpg"</span>);
+  <span class="attribute">background-position</span>: center top;
+  <span class="attribute">background-repeat</span>: no-repeat;
+  <span class="attribute">background-size</span>: cover;
+  <span class="attribute">line-height</span>: <span class="number">1.2</span>;
+  <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-align</span>: center;
+&#125;</pre>
+			<p>Let's also add a <strong>logo</strong></p>
+			<pre code="code"><span class="selector">header img</span>
+  <span class="attribute">display</span>: inline-block;
+  <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
+  <span class="attribute">vertical-align</span>: top;
+  <span class="attribute">width</span>: <span class="number">120</span><span class="unit">px</span>;
+&#125;</pre>
+			<p>Let's take that opportunity to enhance the text styles.</p>
+			<pre code="code"><span class="selector">header h1</span>
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">2.5</span><span class="unit">em</span>;
+  <span class="attribute">font-weight</span>: <span class="number">300</span>;
+&#125;
+
+<span class="selector">header a</span>
+  <span class="attribute">border</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#e81c4f</span>;
+  <span class="attribute">border-radius</span>: <span class="number">290486</span><span class="unit">px</span>;
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">0.6</span><span class="unit">em</span>;
+  <span class="attribute">letter-spacing</span>: <span class="number">0.2</span><span class="unit">em</span>;
+  <span class="attribute">padding</span>: <span class="number">1</span><span class="unit">em</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-transform</span>: uppercase;
+  <span class="attribute">text-decoration</span>: none;
+  <span class="attribute">transition</span>: none <span class="number">200</span><span class="unit">ms</span> ease-out;
+  <span class="attribute">transition-property</span>: color, background;
+&#125;
+
+<span class="selector">header a:hover</span>
+  <span class="attribute">background</span>:  <span class="number">#e81c4f</span>;
+  <span class="attribute">color</span>: white;
+&#125;
+</pre>
+			<p><a href="#header">And voil&agrave;</a>!</p>
+			<p>We've designed a decent page in just a few minutes, following basic principles of web design. There's
+				only <a class="step" data-step="10" href="#share">one last thing</a> left to do...</p>
+		</section>
+	</main>
+
+</ion-content>

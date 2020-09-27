@@ -1,0 +1,435 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>WebDesign102</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <h1><a href="https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9"></a>Learn responsive web design
+        in 5 minutes</h1>
+
+
+    <div class="body" data-article-id="155965" id="article-body" itemprop="articleBody">
+        <p>In this article, I'll teach you as many responsive design techniques as I possibly
+            can in five minutes. This obviously isn't enough to learn it properly, but it will
+            give you an overview of the most important concepts, which I personally define as
+            these:</p>
+
+        <ul>
+            <li>Relative CSS units</li>
+            <li>Media queries</li>
+            <li>Flexbox</li>
+            <li>Responsive typography</li>
+        </ul>
+
+        <p>If you want to dive deeper into the subject afterward, you can check out our <a
+                href="https://scrimba.com/g/gresponsive">responsive web developer bootcamp on
+                Scrimba</a>, which will enable you to build responsive websites on a
+            professional level.</p>
+
+        <p><a href="https://scrimba.com/g/gresponsive"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--flyRbKOU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/bssg4v6f8p6arwmpyf2l.png"
+                    alt="Image of a Scrimba course" loading="lazy"></a><em>Click the image to
+                get to the course.</em></p>
+
+        <p>But for now, let's start with the basics!</p>
+
+        <h2>
+            <a name="relative-css-units" href="#relative-css-units" class="anchor">
+            </a>
+            Relative CSS units
+        </h2>
+
+        <p>At the core of responsive web design are relative CSS units. These are units that
+            get their value from some other external value. This is handy because it allows,
+            for example, the width of an image to be based on the width of the browser.</p>
+
+        <p>The most common ones are:</p>
+
+        <ul>
+            <li>%</li>
+            <li>em</li>
+            <li>rem</li>
+            <li>vw</li>
+            <li>vh</li>
+        </ul>
+
+        <p>In this article, we'll start with the percentage unit <code>%</code>, and then
+            we'll look at the <code>rem</code> unit in the final section. </p>
+
+        <p>Let's say you have a very simple website, like this:</p>
+
+        <p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--lQP1mxTR--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/0790836uoiwkopmzl1y8.png"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--lQP1mxTR--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/0790836uoiwkopmzl1y8.png"
+                    alt="Alt Text" loading="lazy"></a></p>
+
+        <p>Its HTML is just the following:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight html"><code><span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Welcome to my website<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;image</span> <span class="na">src=</span><span class="s">"path/to/img.png"</span> <span class="na">class=</span><span class="s">"myImg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre>
+        </div>
+
+
+
+        <p>As you can see from the GIF below, our image will by default have a fixed
+            width:<br>
+            <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--M7zArMfH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/9y888o3ut0yevvxm6bna.gif"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--M7zArMfH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/9y888o3ut0yevvxm6bna.gif"
+                    alt="Alt Text" loading="lazy"></a></p>
+
+        <p>That's not particularly responsive, so let's change that to 70 percent instead.
+            We'll simply do the following:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight css"><code><span class="nc">.myImg</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">70%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+        </div>
+
+
+
+        <p>This sets the width of the image to 70 percent of the width of its parent, which is
+            the <code>&lt;body&gt;</code> tag. As the <code>&lt;body&gt;</code> tag spans the
+            entire width of the screen, the image will always be 70 percent of the screen
+            itself.</p>
+
+        <p>Here's the result:</p>
+
+        <p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--Ktf-5EH3--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/96fhaye5co7n3dljc9d8.gif"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ktf-5EH3--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/96fhaye5co7n3dljc9d8.gif"
+                    alt="Alt Text" loading="lazy"></a></p>
+
+        <p>And that's how easy it is to create a responsive image!</p>
+
+        <h2>
+            <a name="using-media-queries-to-improve-the-mobile-experience"
+                href="#using-media-queries-to-improve-the-mobile-experience" class="anchor">
+            </a>
+            Using media queries to improve the mobile experience
+        </h2>
+
+        <p>We have one problem with our responsive layout, though, which is that it looks
+            weird on very small screens. The 70% width is to narrow when viewed on mobile.
+            Just have a look for yourself:<br>
+            ​<br>
+            <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--l4covxIw--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/r6ozk66b8ukv3mb67i6d.png"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--l4covxIw--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/r6ozk66b8ukv3mb67i6d.png"
+                    alt="Alt Text" loading="lazy"></a><br>
+            ​<br>
+            Making it look better in this situation is a perfect task for media queries. They
+            allow you to apply different styling based upon, for example, the width the
+            screen. We can basically say <em>if the screen is less than 768px wide, use a
+                different styling.</em></p>
+
+        <p>Here's how we create a media query in CSS:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight css"><code><span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nc">.myImage</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+        </div>
+
+
+
+        <p>This CSS block will only be applied if the width of the screen is less than 768
+            pixels.</p>
+
+        <p>Here's the result:<br>
+            <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--SQNEHJFs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tebsuaareu10uqlrgmms.gif"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--SQNEHJFs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tebsuaareu10uqlrgmms.gif"
+                    alt="Alt Text" loading="lazy"></a></p>
+
+        <p>As you can see, the page has a breakpoint where the image suddenly becomes wider.
+            That's when the browser is 768 pixels wide, and the image swaps betwee
+            <code>70%</code> and <code>100%</code>.</p>
+        <h2>
+            <a name="using-flexbox-for-the-navbar" href="#using-flexbox-for-the-navbar" class="anchor">
+            </a>
+            Using Flexbox for the navbar
+        </h2>
+
+        <p>Next up is Flexbox. You simply can't learn about responsiveness without learning
+            about Flexbox. It changed the responsive design game when it was introduced a few
+            years ago, as it makes a lot easier to position elements responsively along an
+            axis.</p>
+
+        <p>To utilize Flexbox we'll make our site a bit more complex by adding a navbar above
+            the title. Here's the HTML for that:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight html"><code><span class="nt">&lt;nav&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About me<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre>
+        </div>
+
+
+
+        <p>By default, it'll simply look like this. <br>
+            ​<br>
+            <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--kkNdXnYn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wp00p4j2c07rfavaef2d.png"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--kkNdXnYn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wp00p4j2c07rfavaef2d.png"
+                    alt="Alt Text" loading="lazy"></a><br>
+            ​<br>
+            Our navigation items are all squeezed into the left side, which isn't what we
+            want. We want them to be spaced evenly throughout the page.</p>
+
+        <p>To achieve that, we'll simply turn the nav container into a flexbox, and then use
+            the magical <code>justify-content</code> property.<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight css"><code><span class="nt">nav</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-around</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+        </div>
+
+
+
+        <p>The <code>display: flex</code> turns the <code>&lt;nav&gt;</code> into a flexible
+            box, and the <code>justify-content: space-around</code> tells the browser that the
+            items inside the flexible box should have space around them. So the browser
+            distributes all leftover space equally around the three items.</p>
+
+        <p>Here's how it looks. And as you'll notice, it scales nicely:</p>
+
+        <p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--GVGKt9Xm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/8n18vp4s7hkophcgcdg0.gif"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--GVGKt9Xm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/8n18vp4s7hkophcgcdg0.gif"
+                    alt="Alt Text" loading="lazy"></a></p>
+
+        <p>​</p>
+
+        <h2>
+            <a name="responsive-typography-rem" href="#responsive-typography-rem" class="anchor">
+            </a>
+            Responsive typography: rem
+        </h2>
+
+        <p>The final step is to make our typography responsive as well. You see, I want the
+            navbar and the title to shrink a bit when the screen is less than 768 pixels wide
+            (our media query breakpoint, remember?). </p>
+
+        <p>One way to do this would be to decrease all the font sizes in the media query, like
+            this:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight css"><code><span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nt">nav</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">28px</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+        </div>
+
+
+
+        <p>This isn't ideal though. We might end up with several breakpoints in the app, and
+            have multiple elements as well (h2, h3, paragraphs, etc). As a result, we'll have
+            to keep track of all the elements in all the different breakpoints. It'll be a
+            mess!</p>
+
+        <p>However, most likely, they're going to relate to each other in more or less the
+            same way throughout the various breakpoints. For example, the <code>h1</code> will
+            always be larger than the <code>paragraph</code>. </p>
+
+        <p>So what if there was a way I could adjust one factor, and then make rest of the
+            font sizes would scale relative to that factor?</p>
+
+        <p>Enter rems!</p>
+
+        <p>A <code>rem</code> is basically this: the font-size value you've set to your
+            <code>&lt;html&gt;</code> element. Liks this:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight css"><code><span class="nt">html</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+        </div>
+
+
+
+        <p>So in this document, one <code>rem</code> equals 14px.</p>
+
+        <p>That means that we can set all our font sizes on our website in <code>rem</code>
+            units, like this:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight css"><code><span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+        </div>
+
+
+
+        <p>And then we'll simply change the font-size value for the <code>&lt;html&gt;</code>
+            tag inside our media query. This will ensure that the font size for our
+            <code>h1</code> and <code>nav</code> elements will change as well.</p>
+
+        <p>Here's how we change our <code>rem</code> value in a media query:<br>
+        </p>
+
+        <div class="highlight">
+            <pre class="highlight css"><code><span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nt">html</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+        </div>
+
+
+
+        <p>And just like that, we have a breakpoint for all of our font-sizes as well. Notice
+            how the font-size changes as the page crosses the 768-pixel mark:</p>
+
+        <p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--LcCVkmyT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/5ktvcqiyu50tcu1l9xqn.gif"
+                class="article-body-image-wrapper"><img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--LcCVkmyT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/5ktvcqiyu50tcu1l9xqn.gif"
+                    alt="Alt Text" loading="lazy"></a></p>
+
+        <p>It's only been five minutes, but now you've actually learned to make font-sizes,
+            images, and navbar items to respond to the width of the page. That's pretty good,
+            and you've taken your first steps towards learning the highly valuable skills of
+            building responsive websites.</p>
+
+        <p>If you're interested in continuing this learning journey, I'd recommend you to take
+            a look at our <a href="https://scrimba.com/g/gresponsive">massive Scrimba course
+                on the subject!</a>. It's taught by one of YouTube's most popular teachers on
+            the subject, and it'll take you to a professional level in responsive web design.
+        </p>
+
+        <p>Happy coding :)</p>
+
+
+    </div>
+    <div class="article-actions" id="article-reaction-actions">
+        <button id="reaction-butt-like" class="article-reaction-butt like-reaction-button" data-category="like"
+            alt="heart-emoji" title="heart">
+            <img alt="heart"
+                src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-heart-855b5a6263042e4c9448cf2cb0dd2e201598b77b1e3f1dc041492bc0128d9fb8.png" /><span
+                class="reaction-number" id="reaction-number-like"></span>
+        </button>
+        <button id="reaction-butt-unicorn" class="article-reaction-butt unicorn-reaction-button" data-category="unicorn"
+            alt="unicorn-emoji" title="unicorn">
+            <img alt="unicorn"
+                src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-unicorn-695106da1194513bfa0092f1a75943f59089be7d6addbc7459bdfab80f5709e6.png" /><span
+                class="reaction-number" id="reaction-number-unicorn"></span>
+        </button>
+        <button id="reaction-butt-readinglist" class="article-reaction-butt readinglist-reaction-button"
+            data-category="readinglist" alt="unicorn-emoji" title="reading list">
+            <img alt="reading list"
+                src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/emoji/emoji-one-bookmark-040f92162fa88c379d9d4e04bc5c192b1eb0b080d109dfaf3c9b1a60a1aeef0a.png" /><span
+                class="reaction-number" id="reaction-number-readinglist"></span>
+        </button>
+        <a class="article-actions-tweet-button" id="article-actions-tweet-button" rel="noopener" target='_blank'
+            href='https://twitter.com/intent/tweet?text="Learn%20responsive%20web%20design%20in%205%20minutes" by @perborgen %23DEVcommunity https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9'>
+            <img src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/twitter-99c56e7c338b4d5c17d78f658882ddf18b0bbde5b3f42f84e7964689e7e8fb15.svg"
+                alt="twitter logo">
+        </a>
+        <a class="article-actions-comments-count" href="#comments" id="jump-to-comments">
+            DISCUSS
+            <span class="article-actions-comments-count-number">(10)</span>
+        </a>
+        <div class="article-share-action-block">
+            <button id="article-show-more-button" class="dropbtn" aria-label="Toggle dropdown menu">
+                <img src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/three-dots-943ace87a6e3393984e260d09db4d12e3793f6658c33197e93c01ba552c165ba.svg"
+                    class="dropdown-icon" alt="dropdown menu icon">
+            </button>
+            <div class="dropdown-content">
+                <div>
+                    <div class="dropdown-link-row">
+                        <clipboard-copy for="article-copy-link-input" aria-live="polite"
+                            aria-controls="article-copy-link-announcer">
+                            <input type="text" id="article-copy-link-input"
+                                value="https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9"
+                                readonly />
+                            <img id="article-copy-icon"
+                                src="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/content-copy-d564d822fccd292272dc5db1b788fe414691a408b10ccf1b34dfc366bd19eeeb.svg"
+                                alt="Copy to Clipboard" />
+                            <span id="article-copy-link-announcer" role="alert" hidden>Copied
+                                to Clipboard</span>
+                        </clipboard-copy>
+                    </div>
+                    <web-share-wrapper shareurl="https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9"
+                        sharetext="Learn responsive web design in 5 minutes" template="web-share-button">
+                        <div class="dropdown-link-row">
+                            <a target="_blank"
+                                href='https://twitter.com/intent/tweet?text="Learn%20responsive%20web%20design%20in%205%20minutes" by @perborgen %23DEVcommunity https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9'>
+                                Share to Twitter
+                            </a>
+                        </div>
+                        <div class="dropdown-link-row">
+                            <a target='_blank'
+                                href='https://www.linkedin.com/shareArticle?mini=true&url=https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9&title=Learn responsive web design in 5 minutes&summary=&source=dev.to'>
+                                Share to LinkedIn
+                            </a>
+                        </div>
+                        <div class="dropdown-link-row">
+                            <a target='_blank'
+                                href='https://www.reddit.com/submit?url=https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9&title=Learn responsive web design in 5 minutes'>
+                                Share to Reddit
+                            </a>
+                        </div>
+                        <div class="dropdown-link-row">
+                            <a target='_blank'
+                                href='https://news.ycombinator.com/submitlink?u=https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9&t=Learn responsive web design in 5 minutes'>
+                                Share to Hacker News
+                            </a>
+                        </div>
+                        <div class="dropdown-link-row">
+                            <a target='_blank'
+                                href='https://www.facebook.com/sharer.php?u=https://dev.to/perborgen/learn-responsive-web-design-in-5-minutes-hg9'>
+                                Share to Facebook
+                            </a>
+                        </div>
+                    </web-share-wrapper>
+                    <template id="web-share-button">
+                        <div class="dropdown-link-row"><a href="#">Share Post</a></div>
+                    </template>
+                    <div class="dropdown-link-row"><a href="/report-abuse">Report Abuse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

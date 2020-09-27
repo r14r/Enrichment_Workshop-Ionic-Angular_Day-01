@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://gridbyexample.com/examples/ -->
+<html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Grid by Example - Usage examples of CSS Grid Layout</title>
+    <link rel="canonical" href="http://gridbyexample.com/examples/">
+
+      <link rel="preconnect" href="https://gridbyexample.com/examples/fonts.google.com">
+      <link rel="preconnect" href="https://gridbyexample.com/examples/platform.twitter.com">
+      <link rel="preconnect" href="https://gridbyexample.com/examples/track.gaug.es">
+      <link rel="preconnect" href="https://gridbyexample.com/examples/m.servedby-buysellads.com">
+      <link rel="preconnect" href="https://gridbyexample.com/examples/d36ee2fcip1434.cloudfront.net">
+      <link rel="dns-prefetch" href="https://gridbyexample.com/examples/fonts.google.com">
+      <link rel="dns-prefetch" href="https://gridbyexample.com/examples/platform.twitter.com">
+      <link rel="dns-prefetch" href="https://gridbyexample.com/examples/track.gaug.es">
+      <link rel="dns-prefetch" href="https://gridbyexample.com/examples/m.servedby-buysellads.com">
+      <link rel="dns-prefetch" href="https://gridbyexample.com/examples/d36ee2fcip1434.cloudfront.net">
+
+    <script type="text/javascript" async="" id="gauges-tracker" data-site-id="5923de867218b50718020ae0" data-track-path="https://track.gaug.es/track.gif" src="./Grid by Example - Usage examples of CSS Grid Layout_files/track.js"></script><script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '5923de867218b50718020ae0');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+    <link rel="stylesheet" href="./Grid by Example - Usage examples of CSS Grid Layout_files/css">
+    <link rel="stylesheet" href="./Grid by Example - Usage examples of CSS Grid Layout_files/common.css">
+    <script src="./Grid by Example - Usage examples of CSS Grid Layout_files/widgets.js" async="" defer=""></script>
+    
+  <script id="_bsa_srv-CKYI4KQJ_0" type="text/javascript" src="./Grid by Example - Usage examples of CSS Grid Layout_files/CKYI4KQJ.json"></script><script charset="utf-8" src="./Grid by Example - Usage examples of CSS Grid Layout_files/button.fc9ebf951a9289ff2153fdd98b8fd4a4.js"></script></head>
+
+
+    <body>
+
+    <script src="./Grid by Example - Usage examples of CSS Grid Layout_files/monetization.js"></script>
+ <script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('stickybox', 'CKYI4KQJ', 'placement:gridbyexamplecom');
+      }
+  })();
+  </script>
+<header class="header">
+  <div class="wrapper">
+
+    <div class="about">
+      <div class="follow"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 274px; height: 28px;" title="Twitter Follow Button" src="./Grid by Example - Usage examples of CSS Grid Layout_files/follow_button.d9084ca5af1ffbe01c8d444cfadfa6fe.en-gb.html" data-screen-name="rachelandrew"></iframe></div>
+      <h1><a href="https://gridbyexample.com/">Grid by Example</a></h1>
+      <p>Everything you need to learn CSS Grid Layout</p>
+
+    </div>
+
+
+
+  </div>
+
+  <nav class="main">
+    <ul class="nav">
+      <li><a href="https://gridbyexample.com/learn">Start Here</a></li>
+      <li><a href="https://gridbyexample.com/examples">Examples</a></li>
+      <li><a href="https://gridbyexample.com/patterns">Patterns</a></li>
+      <li><a href="https://gridbyexample.com/video">Video tutorial</a></li>
+      <li><a href="https://gridbyexample.com/resources">Resources</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <div class="wrapper">
+      
+      <h1 id="the-examples">The examples</h1>
+
+<div class="content">
+  <p>The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification. <em>They will not work in IE10 or 11.</em></p>
+
+  <p>For page layout examples see a collection of <a href="https://gridbyexample.com/examples/page-layout">page layouts here</a>.</p>
+  
+</div>
+
+<ul class="examples-detail-list">
+  
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples/example1/">Defining a Grid</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example1/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example1.png" alt="Screenshot of Defining a Grid"></a>
+      </figure>
+      <div class="description">
+      To define a grid use new values of the display property `grid` or `inline-grid`. You can then create column and row tracks.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example1/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#track-sizing">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example2">
+    <header><h3><a href="https://gridbyexample.com/examples/example2/">Line-based placement</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example2/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2.png" alt="Screenshot of Line-based placement"></a>
+      </figure>
+      <div class="description">
+      Positioning items on the grid using line numbers
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example2/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#line-placement">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example3">
+    <header><h3><a href="https://gridbyexample.com/examples/example3/">Line-based placement shorthand - grid-row and grid-column</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example3/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example3.png" alt="Screenshot of Line-based placement shorthand - grid-row and grid-column"></a>
+      </figure>
+      <div class="description">
+      Positioning items on the grid using the shorthand properties.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example3/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#placement-shorthands">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example4">
+    <header><h3><a href="https://gridbyexample.com/examples/example4/">Line-based placement shorthand - grid-area</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example4/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example4.png" alt="Screenshot of Line-based placement shorthand - grid-area"></a>
+      </figure>
+      <div class="description">
+      Positioning items on the grid using the shorthand properties.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example4/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#placement-shorthands">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example5">
+    <header><h3><a href="https://gridbyexample.com/examples/example5/">Line-based placement spanning tracks</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example5/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example5.png" alt="Screenshot of Line-based placement spanning tracks"></a>
+      </figure>
+      <div class="description">
+      Positioning items which span more than one grid track.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example5/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#line-placement">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example6">
+    <header><h3><a href="https://gridbyexample.com/examples/example6/">Line-based placement spanning tracks with the span keyword</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example6/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example6.png" alt="Screenshot of Line-based placement spanning tracks with the span keyword"></a>
+      </figure>
+      <div class="description">
+      The span keyword gives us a way to span tracks without needing to specify start and end lines.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example6/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#common-uses-numeric">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example7">
+    <header><h3><a href="https://gridbyexample.com/examples/example7/">Line-based placement named lines</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example7/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example7.png" alt="Screenshot of Line-based placement named lines"></a>
+      </figure>
+      <div class="description">
+      In addition to using line numbers we can name lines.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example7/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#named-lines">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example8">
+    <header><h3><a href="https://gridbyexample.com/examples/example8/">Line-based placement named lines with spans</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example8/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example8.png" alt="Screenshot of Line-based placement named lines with spans"></a>
+      </figure>
+      <div class="description">
+      You can give lines the same name and then use the span keyword to target lines of a certain name.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example8/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#common-uses-named-lines">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example9">
+    <header><h3><a href="https://gridbyexample.com/examples/example9/">Using repeat notation</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example9/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example9.png" alt="Screenshot of Using repeat notation"></a>
+      </figure>
+      <div class="description">
+      Save some time by describing repetitive track listings with repeat.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example9/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#repeat-notation">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example10">
+    <header><h3><a href="https://gridbyexample.com/examples/example10/">Explicit and Implicit Grid</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example10/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example10.png" alt="Screenshot of Explicit and Implicit Grid"></a>
+      </figure>
+      <div class="description">
+      The explicit grid is defined by `grid-template-rows` and `grid-template-columns`.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example10/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#explicit-grids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example11">
+    <header><h3><a href="https://gridbyexample.com/examples/example11/">Defining Grid Areas</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example11/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example11.png" alt="Screenshot of Defining Grid Areas"></a>
+      </figure>
+      <div class="description">
+      We can create named areas on the grid to put content into.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example11/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#grid-template-areas-property">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example12">
+    <header><h3><a href="https://gridbyexample.com/examples/example12/">No clearing required</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example12/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example12.png" alt="Screenshot of No clearing required"></a>
+      </figure>
+      <div class="description">
+      Items sit in their own rows on the grid therefore we do not need to clear them as with floats.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example12/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#placement">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example13">
+    <header><h3><a href="https://gridbyexample.com/examples/example13/">Redefining Grid Areas with Media Queries</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example13/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example13.png" alt="Screenshot of Redefining Grid Areas with Media Queries"></a>
+      </figure>
+      <div class="description">
+      As our layout is defined in CSS we can redefine the grid using media queries
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example13/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#grid-definition">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example14">
+    <header><h3><a href="https://gridbyexample.com/examples/example14/">Source Independence</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example14/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example14.png" alt="Screenshot of Source Independence"></a>
+      </figure>
+      <div class="description">
+      Placement of items on the grid can be separate to their order in the source
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example14/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#order-accessibility">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example15">
+    <header><h3><a href="https://gridbyexample.com/examples/example15/">Layering items</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example15/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example15.png" alt="Screenshot of Layering items"></a>
+      </figure>
+      <div class="description">
+      Items can be stacked, and the stacking order controlled with z-index
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example15/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#z-order">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example16">
+    <header><h3><a href="https://gridbyexample.com/examples/example16/">A grid item as a new positioning context</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example16/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example16.png" alt="Screenshot of A grid item as a new positioning context"></a>
+      </figure>
+      <div class="description">
+      You can absolutely position items inside an area of the Grid.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example16/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#abspos">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example17">
+    <header><h3><a href="https://gridbyexample.com/examples/example17/">Grid auto-placement</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example17/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example17.png" alt="Screenshot of Grid auto-placement"></a>
+      </figure>
+      <div class="description">
+      Grid will position grid items automatically on a grid created on the parent.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example17/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#common-uses-auto-placement">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example18">
+    <header><h3><a href="https://gridbyexample.com/examples/example18/">Grid auto-flow column</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example18/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example18.png" alt="Screenshot of Grid auto-flow column"></a>
+      </figure>
+      <div class="description">
+      Items are placed in rows by default but you can specify to layout by column.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example18/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#propdef-grid-auto-flow">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example19">
+    <header><h3><a href="https://gridbyexample.com/examples/example19/">Grid auto-placement mixed with placed items</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example19/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example19.png" alt="Screenshot of Grid auto-placement mixed with placed items"></a>
+      </figure>
+      <div class="description">
+      You can mix auto-placed items with those you give a position to
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example19/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#propdef-grid-auto-flow">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example20">
+    <header><h3><a href="https://gridbyexample.com/examples/example20/">The auto-fill keyword in repeating track definitions</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example20/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example20.png" alt="Screenshot of The auto-fill keyword in repeating track definitions"></a>
+      </figure>
+      <div class="description">
+      When using repeat notation you can use auto-fill rather than an integer to create as many tracks as will fill the container
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example20/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#valdef-repeat-auto-fill">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example21">
+    <header><h3><a href="https://gridbyexample.com/examples/example21/">Nested Grid</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example21/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example21.png" alt="Screenshot of Nested Grid"></a>
+      </figure>
+      <div class="description">
+      A grid item may become a grid container itself.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example21/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#overview">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example22">
+    <header><h3><a href="https://gridbyexample.com/examples/example22/">Implicit named grid lines</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example22/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example22.png" alt="Screenshot of Implicit named grid lines"></a>
+      </figure>
+      <div class="description">
+      When using Named Areas implicit named lines are automatically created.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example22/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#implicit-named-lines">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example23">
+    <header><h3><a href="https://gridbyexample.com/examples/example23/">Using Order</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example23/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example23.png" alt="Screenshot of Using Order"></a>
+      </figure>
+      <div class="description">
+      Grid supports the order property also found in Flexbox.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example23/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#order-property">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example24">
+    <header><h3><a href="https://gridbyexample.com/examples/example24/">Box alignment align-items</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example24/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example24.png" alt="Screenshot of Box alignment align-items"></a>
+      </figure>
+      <div class="description">
+      Using the box alignment property align-items
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example24/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#column-align">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example25">
+    <header><h3><a href="https://gridbyexample.com/examples/example25/">Box alignment justify-items</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example25/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example25.png" alt="Screenshot of Box alignment justify-items"></a>
+      </figure>
+      <div class="description">
+      Using the box alignment property justify-items
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example25/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#row-align">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example26">
+    <header><h3><a href="https://gridbyexample.com/examples/example26/">Box alignment align-self</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example26/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example26.png" alt="Screenshot of Box alignment align-self"></a>
+      </figure>
+      <div class="description">
+      Using the box alignment property align-self
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example26/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#column-align">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example27">
+    <header><h3><a href="https://gridbyexample.com/examples/example27/">Box alignment justify-self</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example27/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example27.png" alt="Screenshot of Box alignment justify-self"></a>
+      </figure>
+      <div class="description">
+      Using the box alignment property justify-self
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example27/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#row-align">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example28">
+    <header><h3><a href="https://gridbyexample.com/examples/example28/">minmax() in auto-fill repeating tracks</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example28/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example28.png" alt="Screenshot of minmax() in auto-fill repeating tracks"></a>
+      </figure>
+      <div class="description">
+      A grid that contains as many 200 pixel column tracks as will fit into the container with the remaining space shared equally between the columns.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example28/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#valdef-grid-template-columns-minmax">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example29">
+    <header><h3><a href="https://gridbyexample.com/examples/example29/">minmax() and spanning columns and rows</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example29/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example29.png" alt="Screenshot of minmax() and spanning columns and rows"></a>
+      </figure>
+      <div class="description">
+      A grid that contains as many 200 pixel column tracks as will fit into the container with the remaining space shared equally between the columns.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example29/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#valdef-grid-template-columns-minmax">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example30">
+    <header><h3><a href="https://gridbyexample.com/examples/example30/">The auto-fill keyword with named grid lines</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example30/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example30.png" alt="Screenshot of The auto-fill keyword with named grid lines"></a>
+      </figure>
+      <div class="description">
+      An auto-fill grid, positioning items using named lines and span.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example30/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#valdef-grid-template-columns-minmax">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example31">
+    <header><h3><a href="https://gridbyexample.com/examples/example31/">A simple minmax example</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example31/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example31.png" alt="Screenshot of A simple minmax example"></a>
+      </figure>
+      <div class="description">
+      Using minmax() to make the first column stretch after placing all three column tracks
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example31/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#valdef-grid-template-columns-minmax">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example32">
+    <header><h3><a href="https://gridbyexample.com/examples/example32/">Aligning the Grid</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example32/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example32.png" alt="Screenshot of Aligning the Grid"></a>
+      </figure>
+      <div class="description">
+      The total size of the tracks is smaller than the size of the grid container.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example32/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#grid-align">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example33">
+    <header><h3><a href="https://gridbyexample.com/examples/example33/">Aligning the grid with space-around and space-between</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example33/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example33.png" alt="Screenshot of Aligning the grid with space-around and space-between"></a>
+      </figure>
+      <div class="description">
+      Using space-around and space-between may make grid areas and gutters larger than anticipated.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example33/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#grid-align">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example34">
+    <header><h3><a href="https://gridbyexample.com/examples/example34/">Multiple tracks in a track-list with auto-fill</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example34/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example34.png" alt="Screenshot of Multiple tracks in a track-list with auto-fill"></a>
+      </figure>
+      <div class="description">
+      The repeat syntax can take a track-list rather than a single value.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example34/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#repeat-syntax">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example35">
+    <header><h3><a href="https://gridbyexample.com/examples/example35/">Multiple tracks in a track-list with auto-fill and minmax()</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example35/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example35.png" alt="Screenshot of Multiple tracks in a track-list with auto-fill and minmax()"></a>
+      </figure>
+      <div class="description">
+      Using minmax() to create tracks that grow proportionally with multiple track listings.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example35/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#repeat-syntax">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example36">
+    <header><h3><a href="https://gridbyexample.com/examples/example36/">Percentage based grids and gaps</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example36/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example36.png" alt="Screenshot of Percentage based grids and gaps"></a>
+      </figure>
+      <div class="description">
+      You can create grids using percentage values for tracks and gaps.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example36/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#gutters">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example37">
+    <header><h3><a href="https://gridbyexample.com/examples/example37/">auto-fill vs. auto-fit</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples/example37/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example37.png" alt="Screenshot of auto-fill vs. auto-fit"></a>
+      </figure>
+      <div class="description">
+      An example to demonstrate the difference between the auto-fill and auto-fit keywords in repeat notation
+      </div>
+      <footer><a href="https://gridbyexample.com/examples/example37/">View example</a> | <a href="https://drafts.csswg.org/css-grid/#auto-repeat">Read specification</a></footer>
+  </li>
+ 
+</ul>
+
+<h2 id="css-grid-level-2-examples">CSS Grid Level 2 Examples</h2>
+
+<ul class="examples-detail-list">
+  
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-1/">Subgrid on columns and rows</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-1/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-1.png" alt="Screenshot of Subgrid on columns and rows"></a>
+      </figure>
+      <div class="description">
+      The subgrid value is used for grid-template-columns and grid-template-rows
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-1/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-2/">Subgrid on columns, implicit grid rows</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-2/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-2.png" alt="Screenshot of Subgrid on columns, implicit grid rows"></a>
+      </figure>
+      <div class="description">
+      The subgrid value is used for grid-template-columns. The rows are created as an implicit grid.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-2/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-3/">Subgrid on rows, defined column tracks</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-3/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-3.png" alt="Screenshot of Subgrid on rows, defined column tracks"></a>
+      </figure>
+      <div class="description">
+      The subgrid value is used for grid-template-rows. The columns are created as a normal track listing.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-3/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-4/">The subgrid can override the gap on the parent</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-4/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-4.png" alt="Screenshot of The subgrid can override the gap on the parent"></a>
+      </figure>
+      <div class="description">
+      The subgrid inherits the gap of the parent but it can be changed in the subgrid.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-4/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-5/">No implicit grid in subgridded dimension</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-5/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-5.png" alt="Screenshot of No implicit grid in subgridded dimension"></a>
+      </figure>
+      <div class="description">
+      Additional items will be forced into the last row of the subgrid
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-5/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-6/">Line names on the parent are passed into the subgrid</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-6/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-6.png" alt="Screenshot of Line names on the parent are passed into the subgrid"></a>
+      </figure>
+      <div class="description">
+      If you define line names on the parent, these are passed into the subgrid and can be used to position things.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-6/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-7/">Line names on the child are added to those from the parent</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-7/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-7.png" alt="Screenshot of Line names on the child are added to those from the parent"></a>
+      </figure>
+      <div class="description">
+      If you define line names on the parent, these are passed into the subgrid and can be used to position things.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-7/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-8/">Padding is honored on the subgrid</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-8/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-8.png" alt="Screenshot of Padding is honored on the subgrid"></a>
+      </figure>
+      <div class="description">
+      Subgrids can have their own padding which will be deducted from the first and/or last tracks.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-8/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+  <li class="example" id="example1">
+    <header><h3><a href="https://gridbyexample.com/examples2/example2-9/">Margin is honored on the subgrid</a></h3></header>
+    
+      <figure class="imagefig">
+        <a href="https://gridbyexample.com/examples2/example2-9/"><img src="./Grid by Example - Usage examples of CSS Grid Layout_files/example2-9.png" alt="Screenshot of Margin is honored on the subgrid"></a>
+      </figure>
+      <div class="description">
+      Subgrids can have their own margin which will be deducted from the first and/or last tracks.
+      </div>
+      <footer><a href="https://gridbyexample.com/examples2/example2-9/">View example</a> | <a href="https://drafts.csswg.org/css-grid-2/#subgrids">Read specification</a></footer>
+  </li>
+ 
+</ul>
+
+    </div>
+    <footer class="footer"><div class="wrapper">
+
+        
+    
+        <p>This is a project by Rachel Andrew. Take a look at some of the other things I make.</p>
+        <ul>
+            <li><a href="https://grabaperch.com/">Perch CMS</a> - the original Really Little CMS. Designed for speed and simple implementation.</li>
+            <li><a href="https://noti.st/">Notist</a> - slide sharing and much more. Create your public speaking portfolio.</li> 
+            <li><a href="https://thecssworkshop.com/">The CSS Workshop</a> - learn CSS Layout with me</li> 
+        </ul>
+
+        <p class="thanks">This site is hosted on <a href="https://www.netlify.com/">Netlify</a>, thanks to their free hosting for open source projects.</p>
+
+</div>
+</footer>
+ 
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Grid by Example - Usage examples of CSS Grid Layout_files/widget_iframe.d9084ca5af1ffbe01c8d444cfadfa6fe.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

@@ -1,0 +1,50 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>WebDesign: Step 10</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<main>
+		<!--  9 -->
+		<section id="secondary-colors">
+			<h2>Secondary colors</h2>
+			<p>The accent color can be complemented with more <em>subtle</em> shades, to be used on borders,
+				backgrounds, or even the body text.</p>
+			<pre><span class="selector">body</span> &#123;
+  <span class="attribute">color</span>: <span class="number">#566b78</span>;
+&#125;
+
+<span class="selector">code</span>,
+<span class="selector">pre</span>
+	<span class="attribute">background</span>: <span class="number">#f5f7f9</span>;
+	<span class="attribute">border-bottom</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#d8dee9</span>;
+	<span class="attribute">color</span>: <span class="number">#a7adba</span>;
+&#125;
+
+<span class="selector">pre</span>
+  <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
+&#125;</pre>
+			<p>Having changed the shades, why not change the <a class="step" data-step="8"
+					href="#custom-font">shapes</a>...
+			</p>
+		</section>
+
+		<!-- 10 -->
+		<section id="custom-font">
+			<h2>Custom font</h2>
+			<p>Since text is the main content of a webpage, using a <strong>custom font</strong> gives the page even
+				more noticeable identity.</p>
+			<p>While you can embed your own webfont or use an online service like <a href="https://typekit.com"
+					target="_blank">Typekit</a>, let's use <code>"Roboto"</code> from the free <a
+					href="https://fonts.google.com" target="_blank">Google Fonts</a> service:</p>
+			<pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
+
+<span class="selector">body</span> &#123;
+  <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+&#125;</pre>
+			<p>After enhancing your identity through <em>text</em>, how about adding a <a class="step" data-step="9"
+					href="#images">thousand words</a>...</p>
+		</section>
+	</main>
+</ion-content>

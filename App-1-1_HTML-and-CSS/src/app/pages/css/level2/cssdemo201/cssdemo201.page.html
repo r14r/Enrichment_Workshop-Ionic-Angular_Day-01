@@ -1,0 +1,277 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>CSS Demo: 2.02</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h1><a href="https://www.makeuseof.com/tag/simple-css-code-examples/">10 Simple CSS Code Examples</a></h1>
+
+    <h1>1. Easy Paragraph Formatting</h1>
+
+    <div class="wrapper">
+        <div class="box code">
+            <code>
+                <pre>
+p &#123;
+    font-size: 120%;
+    color: lightsalmon;
+&#125;
+            </pre></code>
+        </div>
+
+        <div class="box demo01">
+            <p>Wenever the browser renders a paragraph, the text will inherit the size (120 percent of normal) and the
+                color (“dimgray”).</p>
+            <p>If you’re curious as to which plain-text colors you can use, check out this <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">CSS color list</a> from Mozilla.
+            </p>
+        </div>
+    </div>
+
+    <h1>2. Change Letter Case</h1>
+    <div class="wrapper">
+        <div class="box code">
+            <code>
+                <pre>p.smallcaps &#123;
+    font-variant: small-caps;
+&#125;</pre></code>
+        </div>
+        <div class="box demo02">
+            <p class="smallcaps">Your paragraph here.</p>
+        </div>
+
+
+        <div class="box demo02">
+            <p>If you want to change the case of a set of text to a specific case, you can use these CSS lines:
+                The last one capitalizes the first letter of every sentence.</p>
+        </div>
+        <div class="box demo02">
+            <div class="box code">
+                <code>
+                    <pre>text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;</pre>
+                </code>
+            </div>
+            <div class="box demo02">
+                If you want to change the case of a set of text to a specific case, you can use these CSS lines:
+                The last one capitalizes the first letter of every sentence.
+
+                <p class="ucase">This text is all in upper case.</p>
+                <p class="lcase">This text is all in lower case.</p>
+                <p class="cap">This text is all capitalized.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <h1>3. Change Link Colors</h1>
+    <div class="wrapper">
+        <div class="box code">
+            <pre><code>a:link    &#123; color: gray;          &#125;
+a:visited &#123; color: green;         &#125;
+a:hover   &#123; color: rebeccapurple; &#125;
+a:active  &#123; color: teal;          &#125;</code></pre>
+        </div>
+        <div class="box demo03">
+            Changing the style of something other than a full paragraph.<br>
+            There are four different colors a link can be assigned:
+            <ul>
+                <li>its standard color</li>
+                <li>its visited color</li>
+                <li>its hover color</li>
+                <li>and its active color (which it displays while you’re clicking on it).</li>
+            </ul>
+            <a href="#">Demonstration of a Link.</a>
+        </div>
+    </div>
+
+    <h1>4. Remove Link Underlines</h1>
+    <div class="wrapper">
+        <div class="box code">
+            <pre><code>a &#123;
+    text-decoration: none;
+&#125;</code></pre>
+        </div>
+        <div class="box demo04">
+            While underlined text pretty clearly indicates a link, it sometimes looks nicer to scrap that underline.
+            This is accomplished with the “text-decoration” attribute.
+            <a href="#">Demonstration of a Link.</a>
+
+            Anything with the link (“a”) tag will remain un-underlined.
+        </div>
+
+        <div class="box code">
+            <pre><code>a:hover &#123;
+    text-decoration: underline;
+&#125;</code></pre>
+        </div>
+        <div class="box">
+            <a href="#">Demonstration of a Link.</a>
+
+            You could also add this text-decoration to active links to make sure the underline doesn’t disappear
+            when the link is clicked.
+        </div>
+    </div>
+
+    <h1>5. Make a Link Button</h1>
+    If you want to attract more attention to your link, using a link button is a great way to go about it. This
+    one requires a few more lines, but we’ll go over them each individually:
+
+    <pre><code>
+a:link, a:visited, a:hover, a:active &#123;
+    background-color: green;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+&#125;
+   </code></pre>
+
+    By including all four link states, we ensure that the button doesn’t disappear when a user hovers or clicks
+    on it. You can also set different parameters for hover and active links, like changing the button or text
+    color, to add a bit of pop.
+
+    <h1>6. Create a Text Box</h1>
+    A plain paragraph isn’t very exciting. If you want to highlight your call to action or another element on
+    your page, you might want to throw a border around it. Here’s how to do that with a string of text:
+
+    <pre><code>
+p.important &#123;
+    border-style: solid;
+    border-width: 5px;
+    border-color: purple;
+&#125;
+    </code></pre>
+
+    This one is pretty straightforward. It creates a solid purple border, 5 pixels wide, around any
+    important-class paragraph. To make a paragraph inherit these properties, just declare it like this:
+
+    <p class="important">Your important paragraph here.</p>
+    This will work regardless of the size of your paragraph; a single line will get a border the width of the
+    page, one line high, and a longer paragraph will be surrounded by a larger border.
+
+    There are many different border styles you can apply; instead of “solid,” try “dotted” or “double.” And the
+    width can be “thin,” “medium,” or “thick.” You can even define the thickness of each border individually,
+    like this:
+
+    border-width: 5px 8px 3px 9px;
+    That results in a top border of 5 pixels, a right border of 8, a bottom of 3, and a left border size of 9
+    pixels.
+
+    <h1>7. Center-Align Elements</h1>
+    For a very common task, this is a surprisingly unintuitive thing to do with CSS. Once you’ve done it a few
+    times though, it becomes much easier. There are a couple different ways to center things.
+
+    For a block element (usually an image), we’ll use the margin attribute:
+
+    <pre><code>
+.center &#123;
+    display: block;
+    margin: auto;
+&#125;
+    </code></pre>
+
+    This ensures that the element is displayed as a block, and that the margin on each side is set automatically
+    (which makes them equal). If you want to center all of the images on a given page, you can even add “margin:
+    auto” to the img tag:
+
+    <pre><code>
+img &#123;
+    margin: auto;
+&#125;
+    </code></pre>
+
+    <pre><code>
+.centertext &#123;
+    text-align: center;
+&#125;
+    </code></pre>
+
+    If we want to use the “centertext” class to center the text in a given paragraph, all we need to do is add
+    that class to the p tag:
+
+    <p class="centertext">This text will be centered.</p>
+    Remembering those different steps, however, is another matter. You might want to bookmark this page.
+
+    <h1>8. Adjusting Padding</h1>
+    The padding of an element specifies how much space should be on each side. For example, if you add 25
+    pixels of padding to the bottom of an image, the following text will be pushed 25 pixels down. Many
+    elements can have padding, but we’ll use an image for an example here.
+
+    Let’s say you want every image to have 20 pixels of padding on the left and right sides, and 40 pixels
+    on the top and bottom. There are a number of ways you can do this. The most basic:
+
+    <pre><code>
+img &#123;
+    padding-top: 40px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+&#125;
+    </code></pre>
+    There’s a short hand we can use to present all of this information:
+
+    <pre><code>
+img &#123;
+    padding: 40px 25px 40px 25px;
+&#125;
+    </code></pre>
+
+    This sets the top, right, bottom, and left paddings to the right number. But we can make it even
+    shorter:
+
+    <pre><code>
+img &#123;
+    padding: 40px 25px
+&#125;
+   </code></pre>
+
+    When you use only two values, the first value is set for the top and bottom, while the second will be
+    left and right.
+
+    <h1>9. Highlight Table Rows</h1>
+    CSS can do a lot to make your tables look really nice. Adding colors, adjusting borders, and making your
+    table responsive to mobile screens are all easy. We’ll look at just one cool effect here: highlighting
+    table rows when you mouse over them.
+
+    Here’s the code you’ll need for that:
+    <pre><code>
+tr:hover &#123;
+    background-color: #ddd;
+&#125;
+   <</code></pre>
+
+    Now whenever you mouse over a table cell, that row will change color. To see some of the other cool
+    things you can do, check out the W3C page on fancy CSS tables.
+
+    <h1>10. Shifting Images Between Transparent and Opaque</h1>
+    CSS can help you do cool things with images, too. For example, it can display images at less than full
+    opacity (they appear slightly “whited out”) and bring them to full opacity when you mouse over them.
+    Here’s how we’ll do that:
+
+    <pre><code>
+        img &#123;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        &#125;
+   </code></pre>
+
+    The “filter” attribute does the same thing as “opacity,” but Internet Explorer 8 and earlier don’t
+    recognize the opacity measurement, so it’s a good idea to include it.
+
+    Now that the images are slightly transparent, we’ll bring them to fully opaque on a mouseover:
+
+    <pre><code>
+img:hover &#123;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+&#125;
+   </code></pre>
+
+</ion-content>
