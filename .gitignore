@@ -1,6 +1,5 @@
-**/.env.d
-**/.setenv
+**/.autoenv.d
+**/.autoenv
 **/node_modules
-**/.env.d
-**/.env
+
 
